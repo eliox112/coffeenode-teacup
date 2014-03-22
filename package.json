@@ -1,6 +1,6 @@
 {
   "name": "coffeenode-teacup",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Teacup templates (https://github.com/goodeggs/teacup) extended",
   "main": "lib/main.js",
   "scripts": {
