@@ -1,0 +1,17 @@
+{
+  "name": "coffeenode-teacup",
+  "version": "0.0.16",
+  "description": "Teacup templates (https://github.com/goodeggs/teacup) extended",
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "coffee-script": "~1.7.1",
+    "teacup": "~0.2.10"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "coffeenode-teacup@0.0.16"
+}
