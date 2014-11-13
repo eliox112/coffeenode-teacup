@@ -1,5 +1,10 @@
 
 
+- [CoffeeNode TeaCup](#coffeenode-teacup)
+
+> **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+
 # CoffeeNode TeaCup
 
 **About**: This is an extension of [TeaCup templates](https://github.com/goodeggs/teacup). All tags are

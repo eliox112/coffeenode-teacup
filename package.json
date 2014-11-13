@@ -13,9 +13,9 @@
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "coffee-script": "~1.7.1",
+    "coffee-script": "^1.8.0",
     "coffeenode-bitsnpieces": "0.0.23",
-    "teacup": "~0.2.10"
+    "teacup": "^1.0.0"
   },
   "readme": "ERROR: No README data found!",
   "_id": "coffeenode-teacup@0.0.16"
