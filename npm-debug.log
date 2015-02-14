@@ -1,26 +1,103 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/Users/flow/npm/bin/npm', 'version', 'patch' ]
+1 verbose cli [ 'node', '/Users/flow/npm/bin/npm', 'publish' ]
 2 info using npm@1.4.21
 3 info using node@v1.2.0
 4 verbose node symlink /usr/local/bin/node
-5 error Error: Git working directory not clean.
-5 error M package.json
-5 error M src/main.coffee
-5 error     at /Users/flow/npm/lib/node_modules/npm/lib/version.js:91:33
-5 error     at ChildProcess.exithandler (child_process.js:707:7)
-5 error     at emitTwo (events.js:85:13)
-5 error     at ChildProcess.emit (events.js:153:7)
-5 error     at maybeClose (child_process.js:984:16)
-5 error     at Socket.<anonymous> (child_process.js:1153:11)
-5 error     at emitOne (events.js:75:13)
-5 error     at Socket.emit (events.js:150:7)
-5 error     at Pipe.close (net.js:457:12)
-6 error If you need help, you may report this *entire* log,
-6 error including the npm and node versions, at:
-6 error     <http://github.com/npm/npm/issues>
-7 error System Darwin 12.4.0
-8 error command "node" "/Users/flow/npm/bin/npm" "version" "patch"
-9 error cwd /Volumes/Storage/io/coffeenode-teacup
-10 error node -v v1.2.0
-11 error npm -v 1.4.21
-12 verbose exit [ 1, true ]
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/flow/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/Users/flow/.npm/coffeenode-teacup/0.1.2/package.tgz', '.' ]
+12 verbose tarball /Users/flow/.npm/coffeenode-teacup/0.1.2/package.tgz
+13 verbose folder .
+14 info prepublish coffeenode-teacup@0.1.2
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /Users/flow/.npm/1f1177db-tar.lock
+17 silly lockFile 4ea22144-feenode-teacup-0-1-2-package-tgz tar:///Users/flow/.npm/coffeenode-teacup/0.1.2/package.tgz
+18 verbose lock tar:///Users/flow/.npm/coffeenode-teacup/0.1.2/package.tgz /Users/flow/.npm/4ea22144-feenode-teacup-0-1-2-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 4ea22144-feenode-teacup-0-1-2-package-tgz tar:///Users/flow/.npm/coffeenode-teacup/0.1.2/package.tgz
+22 silly lockFile 4ea22144-feenode-teacup-0-1-2-package-tgz tar:///Users/flow/.npm/coffeenode-teacup/0.1.2/package.tgz
+23 silly lockFile 9bcca3b8--coffeenode-teacup-0-1-2-package /Users/flow/.npm/coffeenode-teacup/0.1.2/package
+24 verbose lock /Users/flow/.npm/coffeenode-teacup/0.1.2/package /Users/flow/.npm/9bcca3b8--coffeenode-teacup-0-1-2-package.lock
+25 silly lockFile 9bcca3b8--coffeenode-teacup-0-1-2-package /Users/flow/.npm/coffeenode-teacup/0.1.2/package
+26 silly lockFile 9bcca3b8--coffeenode-teacup-0-1-2-package /Users/flow/.npm/coffeenode-teacup/0.1.2/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'coffeenode-teacup',
+29 silly publish   version: '0.1.2',
+29 silly publish   description: 'Teacup templates (https://github.com/goodeggs/teacup) extended',
+29 silly publish   main: 'lib/main.js',
+29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'https://github.com/loveencounterflow/coffeenode-teacup' },
+29 silly publish   author: '',
+29 silly publish   license: 'BSD-2-Clause',
+29 silly publish   dependencies: { cnd: '^0.1.5', teacup: '^1.0.0' },
+29 silly publish   readme: 'ERROR: No README data found!',
+29 silly publish   _id: 'coffeenode-teacup@0.1.2',
+29 silly publish   gitHead: 'e56a0803806f16b26bc3be7b3b6cdf803f4dfe5a',
+29 silly publish   bugs: { url: 'https://github.com/loveencounterflow/coffeenode-teacup/issues' },
+29 silly publish   homepage: 'https://github.com/loveencounterflow/coffeenode-teacup',
+29 silly publish   _shasum: '87e5a20bd33bb01ed9904318937281c2c4ebab82',
+29 silly publish   _from: '.' }
+30 verbose request where is /coffeenode-teacup
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id fcf40e49548f749e
+33 verbose url raw /coffeenode-teacup
+34 verbose url resolving [ 'https://registry.npmjs.org/', './coffeenode-teacup' ]
+35 verbose url resolved https://registry.npmjs.org/coffeenode-teacup
+36 verbose request where is https://registry.npmjs.org/coffeenode-teacup
+37 info trying registry request attempt 1 at 01:40:55
+38 http PUT https://registry.npmjs.org/coffeenode-teacup
+39 http 403 https://registry.npmjs.org/coffeenode-teacup
+40 verbose headers { date: 'Sat, 14 Feb 2015 00:40:56 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '2397',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-fra1234-FRA',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1423874456.271508,VS0,VE708',
+40 verbose headers   connection: 'close' }
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 0.1.2
+42 error old={"name":"coffeenode-teacup","version":"0.1.2","description":"Teacup templates (https://github.com/goodeggs/teacup) extended","main":"lib/main.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/loveencounterflow/coffeenode-teacup"},"author":"","license":"BSD-2-Clause","dependencies":{"coffee-script":"^1.8.0","coffeenode-bitsnpieces":"0.0.23","teacup":"^1.0.0"},"_id":"coffeenode-teacup@0.1.2","gitHead":"cc343c45d1eef5a4fe1dfcf59432584136a3a966","bugs":{"url":"https://github.com/loveencounterflow/coffeenode-teacup/issues"},"homepage":"https://github.com/loveencounterflow/coffeenode-teacup","_shasum":"48787db790910eda0cc17d77c1e6e7a087833beb","_from":".","_npmVersion":"1.4.21","_npmUser":{"name":"loveencounterflow","email":"paragate@gmx.net"},"maintainers":[{"name":"loveencounterflow","email":"paragate@gmx.net"}],"dist":{"shasum":"48787db790910eda0cc17d77c1e6e7a087833beb","tarball":"http://registry.npmjs.org/coffeenode-teacup/-/coffeenode-teacup-0.1.2.tgz"}}
+42 error new={"name":"coffeenode-teacup","version":"0.1.2","description":"Teacup templates (https://github.com/goodeggs/teacup) extended","main":"lib/main.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/loveencounterflow/coffeenode-teacup"},"author":"","license":"BSD-2-Clause","dependencies":{"cnd":"^0.1.5","teacup":"^1.0.0"},"readme":"ERROR: No README data found!","_id":"coffeenode-teacup@0.1.2","gitHead":"e56a0803806f16b26bc3be7b3b6cdf803f4dfe5a","bugs":{"url":"https://github.com/loveencounterflow/coffeenode-teacup/issues"},"homepage":"https://github.com/loveencounterflow/coffeenode-teacup","_shasum":"87e5a20bd33bb01ed9904318937281c2c4ebab82","_from":".","_npmVersion":"1.4.21","_npmUser":{"name":"loveencounterflow","email":"paragate@gmx.net"},"maintainers":[{"name":"loveencounterflow","email":"paragate@gmx.net"}],"dist":{"shasum":"87e5a20bd33bb01ed9904318937281c2c4ebab82","tarball":"http://registry.npmjs.org/coffeenode-teacup/-/coffeenode-teacup-0.1.2.tgz"}}: coffeenode-teacup
+42 error     at RegClient.<anonymous> (/Users/flow/npm/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:300:14)
+42 error     at Request._callback (/Users/flow/npm/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:238:65)
+42 error     at Request.self.callback (/Users/flow/npm/lib/node_modules/npm/node_modules/request/request.js:123:22)
+42 error     at emitTwo (events.js:85:13)
+42 error     at Request.emit (events.js:153:7)
+42 error     at Request.<anonymous> (/Users/flow/npm/lib/node_modules/npm/node_modules/request/request.js:893:14)
+42 error     at emitOne (events.js:80:20)
+42 error     at Request.emit (events.js:150:7)
+42 error     at IncomingMessage.<anonymous> (/Users/flow/npm/lib/node_modules/npm/node_modules/request/request.js:844:12)
+42 error     at emitNone (events.js:70:20)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Darwin 12.4.0
+45 error command "node" "/Users/flow/npm/bin/npm" "publish"
+46 error cwd /Volumes/Storage/io/coffeenode-teacup
+47 error node -v v1.2.0
+48 error npm -v 1.4.21
+49 verbose exit [ 1, true ]
