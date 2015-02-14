@@ -3,17 +3,16 @@
 
 
 ############################################################################################################
-TRM                       = require 'coffeenode-trm'
-rpr                       = TRM.rpr.bind TRM
-badge                     = 'CndTeacup'
-log                       = TRM.get_logger 'plain',     badge
-info                      = TRM.get_logger 'info',      badge
-whisper                   = TRM.get_logger 'whisper',   badge
-alert                     = TRM.get_logger 'alert',     badge
-debug                     = TRM.get_logger 'debug',     badge
-warn                      = TRM.get_logger 'warn',      badge
-help                      = TRM.get_logger 'help',      badge
-BITSNPIECES               = require 'coffeenode-bitsnpieces'
+CND                       = require 'cnd'
+rpr                       = CND.rpr.bind CND
+# badge                     = 'CndTeacup'
+# log                       = CND.get_logger 'plain',     badge
+# info                      = CND.get_logger 'info',      badge
+# whisper                   = CND.get_logger 'whisper',   badge
+# alert                     = CND.get_logger 'alert',     badge
+# debug                     = CND.get_logger 'debug',     badge
+# warn                      = CND.get_logger 'warn',      badge
+# help                      = CND.get_logger 'help',      badge
 #...........................................................................................................
 ### https://github.com/goodeggs/teacup ###
 teacup                    = require 'teacup'
@@ -38,7 +37,7 @@ do =>
 # FORMS
 #-----------------------------------------------------------------------------------------------------------
 @TEXT_INPUT = ( Q, label ) ->
-  # log TRM.blue 'TEXT_INPUT'
+  # log CND.blue 'TEXT_INPUT'
   Q ?= {}
   if label?
     throw new Error "can't have both an unnamed argument and an option called 'label'" if Q[ 'label' ]?
@@ -53,9 +52,9 @@ do =>
 
 #-----------------------------------------------------------------------------------------------------------
 @EMAIL = ( Q ) ->
-  # log TRM.blue 'EMAIL'
+  # log CND.blue 'EMAIL'
   Q ?= {}
-  label                 = BITSNPIECES.pluck Q, 'label', "your email:"
+  label                 = CND.pluck Q, 'label', "your email:"
   Q[ 'name'         ]  ?= 'email'
   Q[ 'type'         ]  ?= 'email'
   Q[ 'required'     ]  ?= yes
@@ -63,9 +62,9 @@ do =>
 
 #-----------------------------------------------------------------------------------------------------------
 @PASSWORD = ( Q ) ->
-  # log TRM.blue 'PASSWORD'
+  # log CND.blue 'PASSWORD'
   Q ?= {}
-  label                 = BITSNPIECES.pluck Q, 'label', "your password:"
+  label                 = CND.pluck Q, 'label', "your password:"
   Q[ 'name'         ]  ?= 'password'
   Q[ 'type'         ]  ?= 'password'
   Q[ 'required'     ]  ?= yes
@@ -73,9 +72,9 @@ do =>
 
 #-----------------------------------------------------------------------------------------------------------
 @CONFIRM_PASSWORD = ( Q ) ->
-  # log TRM.blue 'CONFIRM_PASSWORD'
+  # log CND.blue 'CONFIRM_PASSWORD'
   Q ?= {}
-  label                 = BITSNPIECES.pluck Q, 'label', "your password again:"
+  label                 = CND.pluck Q, 'label', "your password again:"
   Q[ 'name'         ]  ?= 'password-r'
   Q[ 'type'         ]  ?= 'password'
   Q[ 'required'     ]  ?= yes
@@ -84,7 +83,7 @@ do =>
 #-----------------------------------------------------------------------------------------------------------
 @SUBMIT = ( Q ) ->
   Q ?= {}
-  label = BITSNPIECES.pluck Q, 'label', "submit"
+  label = CND.pluck Q, 'label', "submit"
   Q[ 'type' ] ?= 'submit'
   return @BUTTON Q, label
 

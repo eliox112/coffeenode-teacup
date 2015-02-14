@@ -13,8 +13,7 @@
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "coffee-script": "^1.8.0",
-    "coffeenode-bitsnpieces": "0.0.23",
+    "cnd": "^0.1.5",
     "teacup": "^1.0.0"
   },
   "readme": "ERROR: No README data found!",
