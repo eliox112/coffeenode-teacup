@@ -24,10 +24,12 @@ teacup                    = require 'teacup'
 do =>
   for name of teacup
     switch name
-      when 'renderable', 'Teacup', 'cede'
+      when 'Teacup', 'cede' # , 'renderable'
         continue
       when 'render'
         my_name = name
+      when 'renderable'
+        my_name = 'new_tag'
       else
         my_name = name.toUpperCase()
     @[ my_name ] = teacup[ name ].bind @
