@@ -4,7 +4,7 @@
   "description": "Teacup templates (https://github.com/goodeggs/teacup) extended",
   "main": "lib/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node lib/tests/main.test.js"
   },
   "repository": {
     "type": "git",
@@ -13,9 +13,12 @@
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "cnd": "^4.3.1",
-    "teacup": "^1.0.0"
+    "cnd": "^9.0.0",
+    "teacup": "^2.0.0"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "coffeenode-teacup@0.0.16"
+  "_id": "coffeenode-teacup@0.0.16",
+  "devDependencies": {
+    "guy-test": "^4.0.0"
+  }
 }
